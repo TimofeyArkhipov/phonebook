@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;600;900&display=swap');
+
+html{
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.App {
+  font-size:  1rem;
+  @media(max-width: 500px){
+    font-size: 1.2rem;
+  }
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background: rgb(160, 27, 187);
+  @media(max-width: 500px){
+    flex-direction: column;
+  }
+  li{
+    margin: 1em 1em;
+    a{
+      color: #FFF;
+      text-decoration: none;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1.5em;
+      
+    }
+
+    &:hover{
+      a{
+        text-decoration: underline;
+      }
+    }
+
+  }
+  
+}
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media(max-width:500px){
+    padding: 0.5em;
+  }
+}
+
+.add-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media(max-width:500px){
+    flex-direction: column;
+  }
+}
+
+.contacts{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+ 
+
+&__search{
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51em;
+  @media(max-width: 500px){
+    width: 90%;
+    font-size: 0.8em;
+  }
+
+  h3{
+    text-transform: uppercase;
+    margin-right: 2em;
+  }
+
+  input{
+    padding: 0.2em;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+  }
+}
+
+  h3, &__btn{
+    text-transform: uppercase;
+    margin-left: 2em;
+    width: auto;
+    height: 3em;
+    font-size: 0.7;
+    @media(max-width:500px){
+      margin-left: 0.5em;
+    }
+  }
+  
+  &__block{
+   margin: 0 1em;
+   display: flex;
+   align-items: center;
+   @media (max-width:500px) {
+    align-items: flex-end;
+   }
+  }
+
+  &__input{
+    padding: 0.2em;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+
+  &__name{
+    text-transform: uppercase;
+    margin-right: 0.5em;
+    @media(max-width:500px){
+      font-size: 0.6em;
+    }
+  }
+
+  &__list{
+    padding: 0;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+    width: 35em;
+    @media(max-width: 500px){
+      width: 100%;
+    }
+  }
+
+  &__item{
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    
+  }
+
+  &__pic{
+    width: 5em;
+   
+    img{
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  &__btn{
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+      color: #fff;
+      background: rgb(160, 27, 187);
+    }
+  }
+  &__ok{
+    margin-left: 1em;
+  }
+
+  &__btn-container{
+    display: flex;
+  }
+
+  &__edit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__edit-input{
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(160, 27, 187);
+  }
+
+}
