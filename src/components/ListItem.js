@@ -27,8 +27,8 @@ export default function UserItem({userName, id, tel, img, handleEditContact, han
                 <img src={img}/>
             </div>
             <div  className='contacts__info' >
-                <input readonly={isEdit} style={inputStyle} defaultValue={userName} onChange={(e) =>setEditVal1(e.target.value)}/>
-                <input readonly={isEdit} style={inputStyle} defaultValue={tel} onChange={(e) =>setEditVal2(e.target.value)}/>
+                <input readOnly={!isEdit} style={inputStyle} defaultValue={userName} onChange={(e) =>setEditVal1(e.target.value)}/>
+                <input readOnly={!isEdit} style={inputStyle} defaultValue={tel} onChange={(e) =>setEditVal2(e.target.value)}/>
             </div>
             <div className="contacts__btn-container">
                 {isEdit ? 
